@@ -1,1 +1,47 @@
+.header{
+    text-align: center;
+    width:1000px;
+    height:1000px;
+    position: relative;
+    margin:0 auto;
+}
 
+.header img{
+    width:100%;
+    height: auto;
+}
+
+.header h1{
+    position: absolute;
+    top:1%;
+    left:50%;
+    transform: translate(-50%,-1%);
+    padding:0;
+    margin:0 auto;
+}
+
+.btn1{
+    position: absolute;
+    top:25%;
+    left:90%;
+    transform: translate(-90%,-25%);
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.list{
+    visibility: visible;
+    position: absolute;
+    top:30%;
+    left:87%;
+    transform: translate(-87%,-30%);
+}
