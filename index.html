@@ -10,16 +10,46 @@
     <div class="header">
       <img src="ノーテー.jpg" alt="titolBack">
       <h1>🍺稲垣 共基です🍺<br><p style="font-size: 20px;">皆さん改めましてよろしくお願いします！</p></h1>
+      <select class="list" name="fruit" size="1">
+       <option value="menu" selected>見たい項目を選んで上のボタンを押してネ</option>
+       <option value="nativePlace">出身・生年月日</option>
+       <option value="character">現在のお仕事</option>
+       <option value="tastes">趣味・特技</option>
+      </select>
       <input class="btn1"
        type="button"
        value="この男、どんな人間？"
-       onclick="clickBtn1()">
-       <select class="list" name="fruit" size="1">
-        <option value="menu" selected>見たい項目を選んで上のボタンを押してネ</option>
-        <option value="native place">出身地・生年月日</option>
-        <option value="character">性格・考え方</option>
-        <option value="tastes">趣味</option>
-    </select>
+       >
+       <p id="nativePlace">
+          <b>出身地　：三重県四日市市</b><br><br>
+          <b>出身校　：四日市中央工業高等学校(機械科)<br>
+          　　　　　全国的にサッカーが有名な学校です！<br>
+          　　　　　因みに僕は野球部でした</b><br><br>
+          <b>生年月日：1995年7月28日(満28歳)<br>
+          　　　　　無限に思えた体力も遂に<br>
+          　　　　　衰えを感じ始めた今日この頃です・・</b>
+        </p>
+       <p id="character">
+          <b>現部署：上郷・下山工場エンジン製造技術部</b><br>
+          <b>　　　：2014年に旧エンジン生技部に配属<br>
+          　　　　その後部署名は変わるが業務は同じ<br>
+          お仕事：エンジンラインの工程、設備生準を担当</b><br><br>
+          <b>技能　：NCプログラム => ややできる<br>
+          　　　　電気回路(PLC・PMC) => ややできる<br>
+          　　　　金属加工、仕上げ => そこそこ得意<br>
+          　　　　人見知り => 全くしない！</b>
+        </p>  
+       <p id="tastes">
+          <b>　特技：散財と趣味を増やす事</b><br>
+          <b>　　　　とにかく形から入るのが特徴<br><br>
+          <b>趣味： ・野球 ・ゴルフ ・フットサル <br>
+            　　　 ・スノーボード ・サバゲ ・魚釣り<br>
+            　　　 ・車イジリ  ・単車イジリ  ・鉄イジリ<br>
+            　　　 ・キャンプ(ほぼソロ) ・DIY ・お酒</b>
+        </p>
+        <p id="message">
+          <b>趣味を探したい方！是非ご相談ください！</b>
+         </p>     
     </div>
   
     <script src="script.js"></script>
