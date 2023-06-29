@@ -47,3 +47,58 @@
     background-color:ghostwhite;
     border:blue 4px solid;
 }
+
+#nativePlace{
+    visibility: hidden;
+    position: absolute;
+    text-align: left;
+    width:400px;
+    height:300px;
+    top:40%;
+    left:14%;
+    transform: translate(-14%,-40%);
+    background-color:yellow;
+    letter-spacing: 0.12em;
+    line-height: 200%;
+}
+
+#character{
+    visibility: hidden;
+    position: absolute;
+    text-align: left;
+    width:400px;
+    height:300px;
+    top:40%;
+    left:14%;
+    transform: translate(-14%,-40%);
+    background-color:yellow;
+    letter-spacing: 0.12em;
+    line-height: 200%;
+}
+
+#tastes{
+    visibility: hidden;
+    position: absolute;
+    text-align: left;
+    width:400px;
+    height:300px;
+    top:40%;
+    left:14%;
+    transform: translate(-14%,-40%);
+    background-color:yellow;
+    letter-spacing: 0.12em;
+    line-height: 200%;
+}
+
+#message{
+    visibility: hidden;
+    position: absolute;
+    text-align: left;
+    top:55%;
+    left:15%;
+    transform: translate(-15%,-55%);
+    background-color:yellow;
+    letter-spacing: 0.12em;
+    line-height: 200%;
+    font-size: large;
+}
