@@ -1,63 +1,135 @@
-'use strict'
-// 1行目に記載している 'use strict' は削除しないでください
+.header{
+    text-align: center;
+    width:1000px;
+    height:1000px;
+    position: relative;
+    margin:0 auto;
+}
+
+#backimage{
+    width:100%;
+    height: auto;
+}
+
+#hukidashi{
+    visibility: hidden;
+    position: absolute;
+    width:60%;
+    height:10%;
+    top: 24%;
+    left:10%;
+    transform: translate(-10%,-24%);
+}
+
+#coment{
+    visibility: hidden;
+    position: absolute;
+    width:95%;
+    height:30%;
+    top: 60%;
+    left:50%;
+    transform: translate(-50%,-60%);
+}
+
+.header h1{
+    position: absolute;
+    top:1%;
+    left:50%;
+    transform: translate(-50%,-1%);
+    padding:0;
+    margin:0 auto;
+}
+
+.btn1{
+    position: absolute;
+    top:25%;
+    left:90%;
+    transform: translate(-90%,-25%);
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+#list{
+    visibility: visible;
+    position: absolute;
+    top:30%;
+    left:95%;
+    transform: translate(-95%,-30%);
+    background-color:ghostwhite;
+    border:blue 4px solid;
+}
+
+#nativePlace{
+    visibility: hidden;
+    position: absolute;
+    text-align: left;
+    width:400px;
+    height:300px;
+    top:40%;
+    left:14%;
+    transform: translate(-14%,-40%);
+    background-color:yellow;
+    letter-spacing: 0.12em;
+    line-height: 200%;
+}
+
+#character{
+    visibility: hidden;
+    position: absolute;
+    text-align: left;
+    width:400px;
+    height:300px;
+    top:40%;
+    left:14%;
+    transform: translate(-14%,-40%);
+    background-color:yellow;
+    letter-spacing: 0.12em;
+    line-height: 200%;
+}
+
+#secretBtn{
+    visibility: visible;
+    position: absolute;
+    width:50px;
+    height:50px;
+    top: 17%;
+    left:65%;
+    transform: translate(-65%,-17%);
+}
 
 
+#tastes{
+    visibility: hidden;
+    position: absolute;
+    text-align: left;
+    width:400px;
+    height:300px;
+    top:40%;
+    left:14%;
+    transform: translate(-14%,-40%);
+    background-color:yellow;
+    letter-spacing: 0.12em;
+    line-height: 200%;
+}
 
-
-function clickBtn(){
-    let select = document.getElementById('list');   
-    console.log(select.options[select.selectedIndex].value)
-    if(select.options[select.selectedIndex].value === "nativePlace"){
-        document.getElementById("character").style.visibility = "hidden"
-        document.getElementById("tastes").style.visibility = "hidden"
-        document.getElementById("message").style.visibility = "hidden"
-        document.getElementById("nativePlace").style.visibility = "visible"
-        }
-    else{
-        if(select.options[select.selectedIndex].value === "character"){
-            document.getElementById("nativePlace").style.visibility = "hidden"
-            document.getElementById("tastes").style.visibility = "hidden"
-            document.getElementById("message").style.visibility = "hidden"
-            document.getElementById("character").style.visibility = "visible"
-            }
-    else{
-        if(select.options[select.selectedIndex].value === "tastes"){
-            document.getElementById("nativePlace").style.visibility = "hidden"
-            document.getElementById("character").style.visibility = "hidden"
-            document.getElementById("tastes").style.visibility = "visible"
-            document.getElementById("message").style.visibility = "visible"
-            }
-    else{
-        if(select.options[select.selectedIndex].value === "close"){
-            document.getElementById("nativePlace").style.visibility = "hidden"
-            document.getElementById("character").style.visibility = "hidden"
-            document.getElementById("tastes").style.visibility = "hidden"
-            document.getElementById("message").style.visibility = "hidden"
-            }
-        }
-        }
-        }
-        return
-    }
-
-    function clickSecretBtn(){
-        document.getElementById("hukidashi").style.visibility = "visible"
-        document.getElementById("nativePlace").style.visibility = "hidden"
-        document.getElementById("character").style.visibility = "hidden"
-        document.getElementById("tastes").style.visibility = "hidden"
-        document.getElementById("message").style.visibility = "hidden"
-     return 
-    }
-
-    document.querySelector("#hukidashi").addEventListener(
-        "click",function(){
-            document.getElementById("coment").style.visibility = "visible"
-        }
-    )
-
-    document.querySelector("#coment").addEventListener(
-        "click",function(){
-            document.getElementById("hukidashi").style.visibility = "hidden"
-            document.getElementById("coment").style.visibility = "hidden"
-        }
-    )
+#message{
+    visibility: hidden;
+    position: absolute;
+    text-align: left;
+    top:55%;
+    left:15%;
+    transform: translate(-15%,-55%);
+    background-color:yellow;
+    letter-spacing: 0.12em;
+    line-height: 200%;
+    font-size: large;
+}
