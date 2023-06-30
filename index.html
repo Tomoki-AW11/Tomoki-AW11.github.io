@@ -8,17 +8,21 @@
   </head>
   <body>
     <div class="header">
-      <img src="ノーテー.jpg" alt="titolBack">
+      <img id="backimage" src="ノーテー.jpg" alt="titolBack">
+      <img id="hukidashi" src="画像1.png" alt="hukidashi">
+      <img id="coment" src="画像2.png" alt="coment">
       <h1>🍺稲垣 共基です🍺<br><p style="font-size: 20px;">皆さん改めましてよろしくお願いします！</p></h1>
-      <select class="list" name="fruit" size="1">
+      <select id="list" name="prof" size="1">
        <option value="menu" selected>見たい項目を選んで上のボタンを押してネ</option>
        <option value="nativePlace">出身・生年月日</option>
        <option value="character">現在のお仕事</option>
        <option value="tastes">趣味・特技</option>
+       <option value="close">閉じる</option>
       </select>
       <input class="btn1"
        type="button"
        value="この男、どんな人間？"
+       onclick="clickBtn()"
        >
        <p id="nativePlace">
           <b>出身地　：三重県四日市市</b><br><br>
@@ -37,7 +41,7 @@
           <b>技能　：NCプログラム => ややできる<br>
           　　　　電気回路(PLC・PMC) => ややできる<br>
           　　　　金属加工、仕上げ => そこそこ得意<br>
-          　　　　人見知り => 全くしない！</b>
+          　　　　人付き合い => 大好き！！！</b>
         </p>  
        <p id="tastes">
           <b>　特技：散財と趣味を増やす事</b><br>
@@ -50,7 +54,13 @@
         <p id="message">
           <b>趣味を探したい方！是非ご相談ください！</b>
          </p>     
+         <p id="secretBtn"
+         onclick="clickSecretBtn()"
+         >
+        </p> 
     </div>
+
+ 
   
     <script src="script.js"></script>
   </body>
